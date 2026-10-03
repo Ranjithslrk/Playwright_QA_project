@@ -36,5 +36,4 @@ jobs:
             name: playwright-test-results
             path: |
               reports/
-              screenshots/
-              logs/
+  
