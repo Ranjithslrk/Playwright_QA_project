@@ -30,3 +30,6 @@ jobs:
       - name: Run tests
         run: |
           pytest
+          reports/
+          screenshots/
+          logs/
