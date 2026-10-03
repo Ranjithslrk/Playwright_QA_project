@@ -29,7 +29,12 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest
-          reports/
-          screenshots/
-          logs/
+      - name: Upload test artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+            name: playwright-test-results
+            path: |
+              reports/
+              screenshots/
+              logs/
